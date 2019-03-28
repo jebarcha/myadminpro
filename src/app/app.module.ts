@@ -15,6 +15,9 @@ import { RegisterComponent } from './login/register.component';
 // temporalmente aqui:
 import { FormsModule } from '@angular/forms';
 
+// Services (not needed as it has inroot)
+// import { ServiceModule } from "./services/service.module";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +29,7 @@ import { FormsModule } from '@angular/forms';
     PagesModule,
     AppRoutingModule,
     FormsModule
+    // ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

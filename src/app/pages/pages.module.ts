@@ -12,6 +12,7 @@ import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
 import { PagesComponent } from './pages.component';
 import { PagesRoutesModule } from './pages.routes';
+import { UsuariosComponent } from './usuarios/usuarios.component';
 
 // Pipe module
 import { PipesModule } from '../pipes/pipes.module';
@@ -23,6 +24,7 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { ProfileComponent } from './profile/profile.component';
         AccountSettingsComponent,
         PromesasComponent,
         RxjsComponent,
-        ProfileComponent
+        ProfileComponent,
+        UsuariosComponent,
+        ModalUploadComponent
     ],
     exports: [
         PagesComponent,
@@ -45,6 +49,6 @@ import { ProfileComponent } from './profile/profile.component';
         Graficas1Component,
         PipesModule
     ],
-    imports: [CommonModule, SharedModule, PagesRoutesModule, FormsModule, ChartsModule]
+    imports: [CommonModule, SharedModule, PagesRoutesModule, FormsModule, ChartsModule, PipesModule]
  })
  export class PagesModule {}

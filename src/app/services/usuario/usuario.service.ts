@@ -20,6 +20,10 @@ export class UsuarioService {
       // console.log('servicio de usuario listo.');
    }
 
+   getToken() {
+      return this.token;
+   }
+
    estaLogueado(): boolean {
       return (this.token.length > 5 ? true : false);
    }
@@ -90,7 +94,7 @@ export class UsuarioService {
             swal('Usuario creado', usuario.email, 'success');
             return resp.usuario;
          })
-      )
+      );
    }
 
    actualizarUsuario(usuario: Usuario) {

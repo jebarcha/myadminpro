@@ -29,7 +29,7 @@ export class MedicoService {
 
   buscarMedicos( termino: string) {
     let url = URL_SERVICIOS + '/busqueda/coleccion/medico/' + termino;
-    console.log('buscarMedicos url', url);
+    // console.log('buscarMedicos url', url);
     return this.http.get(url).pipe(
        map( (resp: any) => {
           return resp.medico;

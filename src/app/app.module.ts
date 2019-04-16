@@ -7,32 +7,36 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 // Modules
-import { PagesModule } from './pages/pages.module';
+
 
 // Components
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+import { PagesComponent } from './pages/pages.component';
 
 // temporalmente aqui:
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Services (not needed as it has inroot)
 // import { ServiceModule } from "./services/service.module";
+import { SharedModule } from './shared/shared.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    PagesComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    PagesModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule
     // ServiceModule
   ],
   providers: [],
